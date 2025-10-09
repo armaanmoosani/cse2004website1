@@ -1,24 +1,83 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Dallas Cowboys</title>
 </head>
+
 <body>
     <h1>Welcome to the Dallas Cowboys Information Page</h1>
+    <div class="top-links">
+        <a href="#poll">Poll</a> |
+        <a href="#funfacts">Fun Facts</a> |
+        <a href="#stats">Player Stats</a>
+    </div>
     <p>The Dallas Cowboys were established in 1960.</p>
     <p>They have won 5 Super Bowl championships.</p>
     <p>Their home stadium is AT&T Stadium in Arlington, Texas.</p>
     <p>Here is a full list of the current Cowboys roster:</p>
+
     <a href="https://www.nfl.com/teams/dallas-cowboys/roster" target="_blank">Dallas Cowboys Roster</a>
-    <h2>Who's your favoirte player?</h2>
-    <form action="index.html" method="get">
-        <input type="radio" id="option1" name="team" value="cowboys"> Dak Prescott<br>
-        <input type="radio" id="option2" name="team" value="cowboys"> Javonte Williams<br>
-        <input type="radio" id="option3" name="team" value="cowboys"> CeeDee Lamb<br>
-        <input type="radio" id="option4" name="team" value="cowboys"> Trevon Diggs<br>
-        <input type="radio" id="option5" name="team" value="cowboys"> Other<br>
+    <a href="https://www.dallascowboys.com" target="_blank">Dallas Cowboys Official Website</a>
+    <a href="https://www.espn.com/nfl/team/schedule/_/name/dal" target="_blank">Dallas Cowboys Schedule</a>
+
+    <h2 id="poll">Who's your favorite player?</h2>
+    <img src="star.png" alt="Dallas Cowboys Logo">
+    <form action="index.html" method="GET">
+        <input type="radio" id="option1" name="player"> Dak Prescott<br>
+        <input type="radio" id="option2" name="player"> Javonte Williams<br>
+        <input type="radio" id="option3" name="player"> CeeDee Lamb<br>
+        <input type="radio" id="option4" name="player"> Trevon Diggs<br>
+        <input type="radio" id="option5" name="player"> Other<br>
         <button type="submit">Submit</button>
     </form>
+
+    <h3 id="funfacts">Fun Facts</h3>
+    <ul>
+        <li>The Dallas Cowboys are the most valuable sports team in the world, valued at ~13 billion dollars. </li>
+        <li>"How 'Bout Dem Boys is one of the Cowboys's slogans</li>
+        <li>The Cowboys have the second most Super Bowl wins in NFL history.</li>
+    </ul>
+
+    <button id="showPic">Show picture of Dak Prescott</button>
+    <img src="dak.jpg" id="dak" alt="Image of Dak Prescott"></img>
+    <h4 id="stats">Player Stats</h4>
+    <table>
+        <tr>
+            <th>Player</th>
+            <th>Position</th>
+            <th>Yards/Stats</th>
+            <th>Touchdowns</th>
+        </tr>
+        <tr>
+            <td>Dak Prescott</td>
+            <td>QB</td>
+            <td>4,516 passing yards</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td>CeeDee Lamb</td>
+            <td>WR</td>
+            <td>1,749 receiving yards</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Micah Parsons</td>
+            <td>LB</td>
+            <td>14 sacks</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Daron Bland</td>
+            <td>CB</td>
+            <td>9 interceptions</td>
+            <td>5</td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
